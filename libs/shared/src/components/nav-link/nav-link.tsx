@@ -1,9 +1,7 @@
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { Nav } from 'react-bootstrap';
 
 import { useNavbarContext } from '../../context/navbar';
-
-import styles from './nav-link.module.scss';
 
 export interface NavLinkProps {
   to: string;

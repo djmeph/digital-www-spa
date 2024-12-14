@@ -1,11 +1,13 @@
-import { useRouter } from 'next/router';
+'use client';
+
+import { useSearchParams } from 'next/navigation';
 import { Container } from 'react-bootstrap';
 
 import { DayOfWeek, EventsDayComponent } from '@lof-digital-www/www-events';
 
 export function Events() {
-  const router = useRouter();
-  const { day } = router.query;
+  const searchParams = useSearchParams();
+  const day = searchParams.get('day');
   if (typeof day !== 'string') throw Error('Invalid Parameter');
 
   return (

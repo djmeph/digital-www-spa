@@ -1,3 +1,5 @@
+'use client';
+
 import { Container } from 'react-bootstrap';
 
 import { WeekViewComponent } from '@lof-digital-www/calendar';

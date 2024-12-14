@@ -1,3 +1,5 @@
+'use client';
+
 import { Container } from 'react-bootstrap';
 
 import { Banner } from '@lof-digital-www/shared';

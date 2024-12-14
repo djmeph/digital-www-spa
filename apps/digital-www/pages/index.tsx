@@ -1,3 +1,5 @@
+'use client';
+
 import { Container } from 'react-bootstrap';
 
 import { HomePage } from '@lof-digital-www/home-page';

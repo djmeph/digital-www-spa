@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './print-view.module.css';
 
 /* eslint-disable-next-line */

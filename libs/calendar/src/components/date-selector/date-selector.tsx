@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
 import { Tab, Tabs } from 'react-bootstrap';
 
