@@ -1,9 +1,9 @@
-import { FC, useState } from 'react';
+import { FC, ReactNode, useState } from 'react';
 
 import { TagFilterContext } from '../context/tag-filter';
 import { TagFilter } from '../interfaces/tag-filter.interface';
 
-export const TagFilterProvider: FC = ({ children }) => {
+export const TagFilterProvider = ({ children }: { children: ReactNode }) => {
   let restoreAllDayFilterState = false;
 
   if (typeof window !== 'undefined') {
