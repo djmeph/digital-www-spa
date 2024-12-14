@@ -6,18 +6,14 @@
   "tags": [],
   "targets": {
     "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["libs/www-events/**/*.{ts,tsx,js,jsx}"]
-      }
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/libs/www-events"],
       "options": {
-        "jestConfig": "libs/www-events/jest.config.ts",
-        "passWithNoTests": true
+        "jestConfig": "libs/www-events/jest.config.ts"
       }
     }
   }
