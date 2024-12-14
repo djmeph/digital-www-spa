@@ -1,7 +1,4 @@
 {
-  "affected": {
-    "defaultBase": "main"
-  },
   "generators": {
     "@nx/react": {
       "application": {
@@ -56,5 +53,7 @@
       "!{projectRoot}/jest.config.[jt]s",
       "!{projectRoot}/src/test-setup.[jt]s"
     ]
-  }
+  },
+  "useInferencePlugins": false,
+  "defaultBase": "main"
 }
