@@ -1,7 +1,7 @@
 {
   "root": true,
   "ignorePatterns": ["**/*"],
-  "plugins": ["@nrwl/nx", "import", "unicorn"],
+  "plugins": ["@nx", "import", "unicorn"],
   "extends": ["plugin:import/recommended"],
   "rules": {
     "curly": "warn",
@@ -76,7 +76,7 @@
     },
     {
       "files": ["*.ts", "*.tsx"],
-      "extends": ["plugin:@nrwl/nx/typescript", "plugin:import/typescript"],
+      "extends": ["plugin:@nx/typescript", "plugin:import/typescript"],
       "settings": {
         "import/resolver": {
           "typescript": {
