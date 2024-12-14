@@ -60,7 +60,12 @@
         ]
       }
     ],
-    "unicorn/catch-error-name": ["warn", { "name": "err" }],
+    "unicorn/catch-error-name": [
+      "warn",
+      {
+        "name": "err"
+      }
+    ],
     "prefer-template": "warn",
     "template-curly-spacing": ["warn", "never"]
   },
@@ -90,9 +95,13 @@
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-unused-vars": [
           "warn",
-          { "ignoreRestSiblings": true }
+          {
+            "ignoreRestSiblings": true
+          }
         ],
-        "@typescript-eslint/no-non-null-assertion": "off"
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/no-extra-semi": "error",
+        "no-extra-semi": "off"
       }
     },
     {
